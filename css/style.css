@@ -247,6 +247,10 @@ main {
   position: relative;
   margin-top: 10px;
   width: 100%;
+  margin-bottom: 20px;
+}
+.indicator2 {
+  bottom: -40px;
 }
 
 .clientes--positionSticky {
@@ -263,6 +267,13 @@ main {
   overflow: scroll;
 
   background-color: #ffffff;
+}
+
+.carousel-inner2 {
+  left: 25%;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
 }
 
 .obras {
@@ -309,8 +320,14 @@ main {
 
 .clientes__imagenes__imagen4 {
   display: block;
+  width: 100%;
+  height: 220px;
+}
 
-  height: 180px;
+.clientes__imagenes__imagen5 {
+  display: block;
+  width: 100%;
+  height: 220px;
 }
 
 .clientes__imagenes__imagen8 {
