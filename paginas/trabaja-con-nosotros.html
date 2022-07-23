@@ -46,44 +46,57 @@
 
         <main class="container-fluid">
             <h2  class="positionSticky" >Trabaja con nosotros</h2>
-                <form class="trabaja-con-nosotros-contenedor1">
-                    <fieldset>
-                        <legend> Datos personales </legend>
 
-                        <div>
-                            <label for="nombre" >Nombre y apellido</label>
-                            <input type="text" id="nombre" required>
-                        </div>
+            <form class="row g-3 trabaja-con-nosotros-contenedor1">
+                <div class="col-md-6 col-12">
+                  <label for="inputNombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputNombre" required>
+                </div>
 
-                        <div>
-                            <label for="email">Mail</label>
-                            <input type="email" id="email" placeholder="nombre@ejemplo.com" required>
-                        </div>
+                <div class="col-md-6 col-12">
+                  <label for="inputApellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="inputApellido" required>
+                </div>
 
-                        <div>
-                            <label for="sobre-ti">Sobre ti</label>
-                            <textarea id="sobre-ti" cols="30" rows="10"></textarea>
-                        </div>
+                <div class="col-12">
+                  <label for="inputMail" class="form-label">Mail</label>
+                  <input type="mail" class="form-control" id="inputMail" placeholder="ejemplo@gmail.com" required>
+                </div>      
 
-                        <div>
-                            <label for="cv">Curriculum vitae</label>
-                            <input type="file" id="cv">
-                        </div>
+                <div class="col-12">
+                    <label for="sobre-ti" class="form-label">Sobre Ti</label>
+                    <textarea id="sobre-ti" cols="30" class="form-control"></textarea>
+                </div>
 
-                        <div>
-                            <label for="telefono">Telefono</label>
-                            <select name="telefono">
-                                <option value="fijo">Fijo</option>
-                                <option value="cel">Celular</option>
-                            </select>
-                            <input type="tel" id="telefono">
-                        </div>
+                <div class="col-2">
+                    <label for="inputCiudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCiudad">
+                </div>
 
-                        <div>
-                            <input type="submit" value="Enviar formulario">
-                        </div>
-                    </fieldset>
-                </form>
+                <div class="col-2">
+                  <label for="inputTel" class="form-label">Teléfono</label>
+                  <select id="inputTel" class="form-select">
+                    <option selected>Fijo</option>
+                    <option>Cel</option>
+                  </select>
+                </div>
+
+                <div class="col-8">
+                  <label for="inputTelefono" class="form-label">Teléfono</label>
+                  <input type="number" class="form-control" id="inputTelefono">
+                </div>
+
+                <div class="col-md-12 col-12">
+                    <label for="cv">Curriculum Vitae</label>
+                    <input type="file" class="form-control" id="cv">
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+            </form>
+
         </main>
 
         <footer id="pie">
@@ -109,7 +122,7 @@
             </div>
 
         </footer>
-        <span class="material-symbols-outlined"><a href="#ir-arriba">
+        <span class="material-symbols-outlined ir-arriba" ><a href="#ir-arriba">
             arrow_upward</a>
         </span>
     </div>
