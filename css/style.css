@@ -47,13 +47,17 @@ header {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: #ffffff;
+  border-color: #3c3c3c;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../Imagenes/menu-outlined.svg);
 }
 
 h1 {
@@ -785,15 +789,19 @@ footer {
 }
 
 .linksUtiles {
-  list-style-image: url(../Imagenes/link-svgrepo-com.svg);
+  list-style-image: url(../Imagenes/admin-links.svg);
 }
 
 .contacto__mail {
-  list-style-image: url(../Imagenes/mail-svgrepo-com.svg);
+  list-style-image: url(../Imagenes/mail-filled.svg);
 }
 
 .contacto__linkedin {
-  list-style-image: url(../Imagenes/linkedin.svg);
+  list-style-image: url(../Imagenes/linkedin-box-fill.svg);
+}
+
+.contaco__ubicacion {
+  list-style-image: url(../Imagenes/google-maps.svg);
 }
 
 /**** Fin Footer Mobile****/
@@ -823,16 +831,4 @@ footer {
     color: black;
     background-color: #636363;
   } */
-
-  .linksUtiles {
-    list-style-image: url(../Imagenes/link-svgrepo-com.svg);
-  }
-
-  .contacto__mail {
-    list-style-image: url(../Imagenes/mail-svgrepo-com.svg);
-  }
-
-  .contacto__linkedin {
-    list-style-image: url(../Imagenes/linkedin.svg);
-  }
 }
