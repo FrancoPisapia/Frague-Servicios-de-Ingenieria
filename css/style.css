@@ -1,11 +1,3 @@
-/* Global */
-* {
-  box-sizing: border-box;
-  zoom: 100%; }
-
-img {
-  max-width: 100%; }
-
 /**** Inicio Mobile header****/
 .grid {
   display: grid;
@@ -25,7 +17,6 @@ header {
   margin: -20px -8px 0 -8px;
   width: 110%; }
 
-/* Ver BIEN */
 .bg-light {
   --bs-bg-opacity: 0;
   background-color: #3c3c3c; }
@@ -81,10 +72,9 @@ a {
   width: 100%;
   margin-top: -25px;
   padding: 25px; }
-
-.navegador__lista li:hover {
-  background-color: gray;
-  transition: 0.1s ease; }
+  .navegador__lista li:hover {
+    background-color: gray;
+    transition: 0.1s ease; }
 
 .navbar > .container,
 .navbar > .container-fluid,
@@ -108,9 +98,9 @@ a {
   h1 {
     text-align: left; }
   /* .navbar-nav {
-      display: flex;
-      justify-content: space-evenly;
-    } */
+        display: flex;
+        justify-content: space-evenly;
+      } */
   header {
     grid-area: header;
     display: block;
@@ -120,40 +110,57 @@ a {
     position: relative;
     width: 80px;
     height: 60px; }
-  /* .navegador {
-      flex-wrap: nowrap;
-      text-align: center;
-    } */
   .navegador__lista {
     flex-direction: row;
     justify-content: space-around; } }
 
 /****Fin Header Desktop****/
-/****Inicio Mobile****/
-body {
-  background-color: #a5bab6;
-  color: #000000;
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  overflow-x: hidden; }
+/**** Inicio Footer Mobile****/
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  margin: 0px -8px -10px -8px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: #636363;
+  color: #ffffff;
+  width: 110%;
+  font-size: 15px;
+  z-index: 10; }
 
-main {
-  grid-area: main; }
+.ir-arriba {
+  position: fixed;
+  bottom: 7px;
+  right: 5px;
+  z-index: 20;
+  color: black;
+  background-color: #636363; }
 
-.positionSticky {
-  position: sticky;
-  top: 215px;
-  height: 40px;
-  background-color: #a5bab6; }
+.linksUtiles {
+  list-style-image: url(../Imagenes/admin-links.svg); }
 
-/****Fin Mobile****/
-/****Inicio Desktop****/
+.contacto__mail {
+  list-style-image: url(../Imagenes/mail-filled.svg); }
+
+.contacto__linkedin {
+  list-style-image: url(../Imagenes/linkedin-box-fill.svg); }
+
+.contaco__ubicacion {
+  list-style-image: url(../Imagenes/google-maps.svg); }
+
+/**** Fin Footer Mobile****/
+/*** Inicio Footer Desktop***/
 @media screen and (min-width: 1024px) {
-  .positionSticky {
-    top: 160px; } }
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px -20px -10px -10px;
+    padding: 20px;
+    width: 105%; } }
 
-/****Fin Desktop****/
 /****Inicio Mobile****/
 .obras__video {
   display: flex;
@@ -262,8 +269,8 @@ form {
   height: 500px; }
 
 /* .row1 {
-    margin-top: -25px;
-  } */
+      margin-top: -25px;
+    } */
 /****Fin Mobile****/
 /****Inicio Desktop****/
 @media screen and (min-width: 1024px) {
@@ -277,45 +284,17 @@ form {
     position: relative; } }
 
 /****Fin Desktop****/
-/****Inicio Mobile****/
-/* Sobre nosotros */
-.sobre-nosotros--grid2 {
-  display: grid;
-  grid-template-areas: "sobreNosotros" "imagen1" "sobre-nosotros-contenedor2" "border" "contenedor3";
-  gap: 20px; }
-
-/****Fin Mobile****/
-/****Inicio Desktop****/
-@media screen and (min-width: 1024px) {
-  .sobre-nosotros--grid2 {
-    grid-template-areas: "sobreNosotros imagen1" "border border" "sobre-nosotros-contenedor2 contenedor3";
-    grid-template-columns: 50% 50%; } }
-
-/****Fin Desktop****/
+/* Nuestros clientes */
 /****Inicio Mobil****/
-.sobre-nosotros-contenedor2 {
-  grid-area: sobre-nosotros-contenedor2;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 20px; }
+.clientes__imagenes--wrap {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; }
 
-/****Fin Mobil****/
-/****Inicio Desktop****/
-@media screen and (min-width: 1024px) {
-  .sobre-nosotros-contenedor2 {
-    grid-area: sobre-nosotros-contenedor2; }
-  .margin {
-    margin-top: 26.25px; } }
-
-/****Fin Desktop****/
-/****Inicio Mobil****/
-.contenedor3 {
-  grid-area: contenedor3;
-  margin-left: 10px; }
-
-.imagen1 {
-  grid-area: imagen1;
-  margin: 75px 25px 0 0; }
+.nuestros-clientes-contenedor1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 /* Servicios */
 .servicios-contenedor1 {
@@ -380,6 +359,66 @@ form {
   .servicios-contenedor3--display-flex {
     display: flex;
     justify-content: space-around; } }
+
+/****Inicio Mobile****/
+/* Sobre nosotros */
+.sobre-nosotros--grid2 {
+  display: grid;
+  grid-template-areas: "sobreNosotros" "imagen1" "sobre-nosotros-contenedor2" "border" "contenedor3";
+  gap: 20px; }
+
+/****Fin Mobile****/
+/****Inicio Desktop****/
+@media screen and (min-width: 1024px) {
+  .sobre-nosotros--grid2 {
+    grid-template-areas: "sobreNosotros imagen1" "border border" "sobre-nosotros-contenedor2 contenedor3";
+    grid-template-columns: 50% 50%; } }
+
+/****Fin Desktop****/
+/****Inicio Mobil****/
+.sobre-nosotros-contenedor2 {
+  grid-area: sobre-nosotros-contenedor2;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+/****Fin Mobil****/
+/****Inicio Desktop****/
+@media screen and (min-width: 1024px) {
+  .sobre-nosotros-contenedor2 {
+    grid-area: sobre-nosotros-contenedor2; }
+  .margin {
+    margin-top: 26.25px; } }
+
+/****Fin Desktop****/
+/****Inicio Mobil****/
+.contenedor3 {
+  grid-area: contenedor3;
+  margin-left: 10px; }
+
+.imagen1 {
+  grid-area: imagen1;
+  margin: 75px 25px 0 0; }
+
+/****Fin Desktop****/
+/* Trabaja con nosotros */
+.trabaja-con-nosotros-contenedor1 {
+  height: 700px;
+  padding-top: 50px; }
+
+form {
+  height: 500px; }
+
+/****Inicio Desktop****/
+@media screen and (min-width: 1024px) {
+  form {
+    height: 500px; }
+  .clientes--positionSticky {
+    top: 150px; }
+  .obras__imagenes__imagen1 {
+    right: 5%; }
+  .obras__imagenes__contenedor {
+    position: relative; } }
 
 /* Trabajos realizados */
 .trabajos-realizados-contenedor1 {
@@ -459,9 +498,9 @@ form {
   background-size: cover; }
 
 /* .trabajos-realizados-contenedor2 {
-    position: relative;
-    top: 300px;
-  } */
+      position: relative;
+      top: 300px;
+    } */
 /****Fin Mobil****/
 /****Inicio Desktop****/
 @media screen and (min-width: 1024px) {
@@ -483,18 +522,6 @@ form {
     margin-bottom: 30px; } }
 
 /****Fin Desktop****/
-/****Inicio Mobil****/
-/* Nuestros clientes */
-.clientes__imagenes--wrap {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto; }
-
-.nuestros-clientes-contenedor1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
 /* Trabaja con nosotros */
 .trabaja-con-nosotros-contenedor1 {
   height: 700px;
@@ -544,70 +571,43 @@ form {
 @media screen and (min-width: 1024px) {
   .contacto-contenedor1 {
     display: flex;
-    flex-direction: column;
-    /* grid-template-areas:
-        "contacto"
-        "img-obras-civiles obras-civiles"
-        "img-obras-viales obras-viales"
-        "img-obras-hidricas obras-hidricas"; */ }
+    flex-direction: column; }
   .contacto-flex {
     display: flex;
     margin-top: 30px;
     margin-bottom: 50px;
     gap: 20px; } }
 
-/**** Inicio Footer Mobile****/
-footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  margin: 0px -8px -10px -8px;
-  width: 100%;
-  padding-left: 10px;
-  background-color: #636363;
-  color: #ffffff;
-  width: 110%;
-  font-size: 15px;
-  z-index: 10; }
+/* Global */
+* {
+  box-sizing: border-box;
+  zoom: 100%; }
 
-.ir-arriba {
-  position: fixed;
-  bottom: 7px;
-  right: 5px;
-  z-index: 20;
-  color: black;
-  background-color: #636363; }
+img {
+  max-width: 100%; }
 
-.linksUtiles {
-  list-style-image: url(../Imagenes/admin-links.svg); }
+/****Inicio Mobile****/
+body {
+  background-color: #a5bab6;
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  overflow-x: hidden; }
 
-.contacto__mail {
-  list-style-image: url(../Imagenes/mail-filled.svg); }
+main {
+  grid-area: main; }
 
-.contacto__linkedin {
-  list-style-image: url(../Imagenes/linkedin-box-fill.svg); }
+.positionSticky {
+  position: sticky;
+  top: 215px;
+  height: 40px;
+  background-color: #a5bab6; }
 
-.contaco__ubicacion {
-  list-style-image: url(../Imagenes/google-maps.svg); }
-
-/**** Fin Footer Mobile****/
-/*** Inicio Footer Desktop***/
+/****Fin Mobile****/
+/****Inicio Desktop****/
 @media screen and (min-width: 1024px) {
-  footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0px -20px -10px -10px;
-    padding: 20px;
-    width: 105%;
-    /* overflow: hidden; */ }
-  /* span {
-      position: fixed;
-      bottom: 7px;
-      right: 5px;
-      z-index: 20;
-  
-      color: black;
-      background-color: #636363;
-    } */ }
+  .positionSticky {
+    top: 160px; } }
+
+/****Fin Desktop****/
