@@ -15,6 +15,14 @@
   /* grid-template-rows: repeat(6, 2fr); */
 }
 
+.contacto__mail {
+  list-style-image: url(../Imagenes/mail-filled.svg);
+}
+
+.ing {
+  list-style-image: url(../Imagenes/baseline-engineering.svg);
+}
+
 .contacto {
   grid-area: contacto;
 }
