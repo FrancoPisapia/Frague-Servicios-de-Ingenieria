@@ -6,4 +6,9 @@ $color-body: #a5bab6;
 
 $color-letra-body: #ffffff;
 
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
 $width-height-img-obras: 200px;

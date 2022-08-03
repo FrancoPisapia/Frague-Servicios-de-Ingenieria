@@ -15,21 +15,12 @@
   /* grid-template-rows: repeat(6, 2fr); */
 }
 
-.contacto__mail {
-  list-style-image: url(../Imagenes/mail-filled.svg);
-}
-
-.ing {
-  list-style-image: url(../Imagenes/baseline-engineering.svg);
-}
-
 .contacto {
   grid-area: contacto;
 }
 .img-obras-civiles {
   grid-area: img-obras-civiles;
-  width: $width-height-img-obras;
-  height: $width-height-img-obras;
+  @include size($width-height-img-obras, $width-height-img-obras);
 }
 
 .obras-civiles {
@@ -40,8 +31,7 @@
 
 .img-obras-viales {
   grid-area: img-obras-viales;
-  width: $width-height-img-obras;
-  height: $width-height-img-obras;
+  @include size($width-height-img-obras, $width-height-img-obras);
 }
 
 .obras-viales {
@@ -52,8 +42,7 @@
 
 .img-obras-hidricas {
   grid-area: img-obras-hidricas;
-  width: $width-height-img-obras;
-  height: $width-height-img-obras;
+  @include size($width-height-img-obras, $width-height-img-obras);
 }
 
 .obras-hidricas {

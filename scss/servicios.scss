@@ -1,8 +1,7 @@
 /* Servicios */
 
 .servicios-contenedor1 {
-  width: 60%;
-  height: 300px;
+  @include size(60%, 300px);
 }
 
 /****Fin Mobil****/
@@ -27,6 +26,11 @@
 
 /****Inicio Mobil****/
 
+.servicios-contenedor2__imagen1 {
+  display: block;
+  @include size(100%, 450px);
+}
+
 .servicios-contenedor2 {
   position: relative;
 }
@@ -46,8 +50,7 @@
 /****Inicio Mobil****/
 
 .servicios-contenedor2__imagen1 {
-  height: 450px;
-  width: 100%;
+  @include size(100%, 450px);
   z-index: 20;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -59,8 +62,7 @@
 @media screen and (min-width: 1024px) {
   .servicios-contenedor2__imagen1 {
     z-index: 20;
-    width: 100%;
-    height: 400px;
+    @include size(100%, 400px);
     margin: auto;
   }
 }
