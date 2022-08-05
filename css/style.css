@@ -312,6 +312,27 @@ footer {
 .servicios-contenedor2 {
   position: relative; }
 
+.vial {
+  list-style-image: url(../Imagenes/train.svg); }
+
+.math {
+  list-style-image: url(../Imagenes/math-formula-16-filled.svg); }
+
+.urbanismo {
+  list-style-image: url(../Imagenes/crane.svg); }
+
+.energia {
+  list-style-image: url(../Imagenes/electricity.svg); }
+
+.hidraulica {
+  list-style-image: url(../Imagenes/water.svg); }
+
+.reciclar {
+  list-style-image: url(../Imagenes/recycle.svg); }
+
+.casco {
+  list-style-image: url(../Imagenes/helmet-safety.svg); }
+
 /****Fin Mobil****/
 /****Inicio Desktop****/
 @media screen and (min-width: 1024px) {
@@ -490,9 +511,6 @@ form {
 .adelante1 {
   background-image: url(../Imagenes/torre-ezeiza.jfif); }
 
-.adelante1 {
-  background-image: url(../Imagenes/torre-ezeiza.jfif); }
-
 .adelante2 {
   background-image: url(../Imagenes/edificio.bmp); }
 
@@ -545,6 +563,9 @@ form {
   grid-area: img-obras-civiles;
   height: 200px;
   width: 200px; }
+
+.ing {
+  list-style-image: url(../Imagenes/baseline-engineering.svg); }
 
 .obras-civiles {
   grid-area: obras-civiles;
@@ -603,6 +624,9 @@ body {
 main {
   grid-area: main; }
 
+.tituliLista {
+  font-family: "Lato", sans-serif; }
+
 .positionSticky {
   position: sticky;
   top: 205px;
@@ -610,17 +634,29 @@ main {
   margin-bottom: 25px;
   background-color: #a5bab6; }
 
-.ing li {
-  list-style-image: url(../Imagenes/baseline-engineering.svg); }
-
 .contacto__mail li {
-  list-style-image: url(../Imagenes/mail-filled.svg); }
+  list-style-image: url(../Imagenes/mail-filled.svg);
+  font-family: "Raleway", sans-serif; }
 
 .publico li {
-  list-style-image: url(../Imagenes/government-fill.svg); }
+  list-style-image: url(../Imagenes/government-fill.svg);
+  font-family: "Raleway", sans-serif; }
 
 .privado li {
-  list-style-image: url(../Imagenes/crane.svg); }
+  list-style-image: url(../Imagenes/crane.svg);
+  font-family: "Raleway", sans-serif; }
+
+.estudios li {
+  list-style-image: url(../Imagenes/gear.svg);
+  font-family: "Raleway", sans-serif; }
+
+.construccion li {
+  list-style-image: url(../Imagenes/construction-worker-negative.svg);
+  font-family: "Raleway", sans-serif; }
+
+.auditoria li {
+  list-style-image: url(../Imagenes/i-documents-accepted.svg);
+  font-family: "Raleway", sans-serif; }
 
 /****Fin Mobile****/
 /****Inicio Desktop****/

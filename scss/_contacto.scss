@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "_variables.scss";
 
 /* Contaco */
 
@@ -21,6 +21,9 @@
 .img-obras-civiles {
   grid-area: img-obras-civiles;
   @include size($width-height-img-obras, $width-height-img-obras);
+}
+.ing {
+  list-style-image: url(../Imagenes/baseline-engineering.svg);
 }
 
 .obras-civiles {

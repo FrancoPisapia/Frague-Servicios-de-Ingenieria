@@ -35,6 +35,22 @@
   position: relative;
 }
 
+$listas: (
+  vial: url(../Imagenes/train.svg),
+  math: url(../Imagenes/math-formula-16-filled.svg),
+  urbanismo: url(../Imagenes/crane.svg),
+  energia: url(../Imagenes/electricity.svg),
+  hidraulica: url(../Imagenes/water.svg),
+  reciclar: url(../Imagenes/recycle.svg),
+  casco: url(../Imagenes/helmet-safety.svg),
+);
+
+@each $lista, $vinieta in $listas {
+  .#{$lista} {
+    list-style-image: $vinieta;
+  }
+}
+
 /****Fin Mobil****/
 
 /****Inicio Desktop****/
